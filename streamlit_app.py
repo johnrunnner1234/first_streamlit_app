@@ -39,11 +39,6 @@ except URLError as e:
 streamlit.write('The user entered ', fruit_choice)
   
 
-
-
-
-
-
 def get_fruit_load_list():
     with my_cnx.cursor() as my_cur:
             my_cur.execute("select * from fruit_load_list;")
